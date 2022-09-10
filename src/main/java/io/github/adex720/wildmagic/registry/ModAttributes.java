@@ -5,6 +5,9 @@ import net.minecraft.entity.attribute.ClampedEntityAttribute;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.util.registry.Registry;
 
+/**
+ * @author adex720
+ */
 public class ModAttributes {
 
     public static final EntityAttribute INTELLIGENCE = new ClampedEntityAttribute("attribute.name.wmag.intelligence", 1d, 1d, 100d);

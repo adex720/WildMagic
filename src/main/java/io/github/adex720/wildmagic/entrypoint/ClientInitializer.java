@@ -5,6 +5,11 @@ import io.github.adex720.wildmagic.event.MagicAttributeUpdater;
 import io.github.adex720.wildmagic.registry.ModKeyBindings;
 import net.fabricmc.api.ClientModInitializer;
 
+/**
+ * Initializes everything needed for the client.
+ *
+ * @author adex720
+ */
 public class ClientInitializer implements ClientModInitializer {
 
     @Override

@@ -5,6 +5,11 @@ import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ItemStack;
 
+/**
+ * An enchantment with custom acceptable items.
+ *
+ * @author adex720
+ */
 public class CustomEnchantment extends Enchantment {
 
     public final ModEnchantmentTarget enchantmentTarget;

@@ -5,6 +5,11 @@ import net.minecraft.item.Items;
 
 import java.util.HashMap;
 
+/**
+ * Some spells require a specific core to be executed.
+ *
+ * @author adex720
+ */
 public enum WandCore {
 
     NONE("none", Items.AIR),

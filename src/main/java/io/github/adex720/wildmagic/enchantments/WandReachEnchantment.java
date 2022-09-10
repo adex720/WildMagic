@@ -2,6 +2,9 @@ package io.github.adex720.wildmagic.enchantments;
 
 import net.minecraft.entity.EquipmentSlot;
 
+/**
+ * @author adex720
+ */
 public class WandReachEnchantment extends CustomEnchantment {
 
     public WandReachEnchantment(Rarity weight, EquipmentSlot[] slotTypes) {

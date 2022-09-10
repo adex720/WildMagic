@@ -3,6 +3,11 @@ package io.github.adex720.wildmagic.spell;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
 
+/**
+ * A spell which can be used on blocks.
+ *
+ * @author adex720
+ */
 public abstract class BlockTargetSpell extends Spell {
 
     public final int range;

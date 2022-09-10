@@ -5,6 +5,9 @@ import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 
+/**
+ * @author adex720
+ */
 public class ModItemGroups {
 
     public static final ItemGroup WANDS = FabricItemGroupBuilder.build(

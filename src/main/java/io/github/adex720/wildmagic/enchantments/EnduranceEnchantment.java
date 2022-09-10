@@ -3,6 +3,9 @@ package io.github.adex720.wildmagic.enchantments;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.util.math.random.Random;
 
+/**
+ * @author adex720
+ */
 public class EnduranceEnchantment extends CustomEnchantment {
 
     public EnduranceEnchantment(Rarity weight, EquipmentSlot[] slotTypes) {

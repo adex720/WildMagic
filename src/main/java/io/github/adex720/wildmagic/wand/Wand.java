@@ -1,5 +1,6 @@
 package io.github.adex720.wildmagic.wand;
 
+import io.github.adex720.wildmagic.registry.ModEnchantments;
 import io.github.adex720.wildmagic.registry.ModItemGroups;
 import io.github.adex720.wildmagic.registry.ModSpells;
 import io.github.adex720.wildmagic.registry.ModTags;
@@ -27,6 +28,15 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
+/**
+ * Wands are used to cast spells.
+ * A wand can hold 4 different spells at the same time.
+ * The spells are used by pressing a key on keyboard.
+ *
+ * Each wand has one core. The core is used when crafting the wand.
+ *
+ * @author adex720
+ */
 public class Wand extends ToolItem {
 
     public final WandToolMaterial wandMaterial;
@@ -115,8 +125,7 @@ public class Wand extends ToolItem {
 
     public boolean damage(ItemStack wand, int amount, Random random, @Nullable ServerPlayerEntity player) {
         if (amount <= 0) return false;
-
-        int enduranceLevel = EnchantmentHelper.getLevel(Enchantments.UNBREAKING, wand);
+        int enduranceLevel = EnchantmentHelper.getLevel(ModEnchantments.ENDURANCE, wand);
 
         if (enduranceLevel > 0) {
             int preventedDamage = 0;

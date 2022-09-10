@@ -11,6 +11,11 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 
+/**
+ * A spell which gives a status effect and can be used on other living entities.
+ *
+ * @author adex720
+ */
 public class EntityTargetStatusEffectSpell extends EntityTargetSpell {
 
     public final StatusEffect statusEffect;

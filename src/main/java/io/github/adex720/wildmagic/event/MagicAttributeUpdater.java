@@ -8,6 +8,11 @@ import net.minecraft.entity.attribute.AttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributeInstance;
 import net.minecraft.util.math.random.Random;
 
+/**
+ * Updates magic related attributes for each player on each tick.
+ *
+ * @author adex720
+ */
 public class MagicAttributeUpdater {
 
     public MagicAttributeUpdater() {

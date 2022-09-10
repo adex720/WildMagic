@@ -4,6 +4,11 @@ import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
+/**
+ * The wand core determines the durability and enchantability of the wand.
+ *
+ * @author adex720
+ */
 public enum WandToolMaterial implements ToolMaterial {
 
     ACACIA(Ingredient.ofItems(Items.ACACIA_PLANKS), 512, 7),

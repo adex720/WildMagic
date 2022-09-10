@@ -7,6 +7,9 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
+/**
+ * @author adex720
+ */
 public class ModItems {
 
     public static final Item COLLECTOR_CORE = new Item(new FabricItemSettings().group(ModItemGroups.ITEMS).rarity(Rarity.UNCOMMON));

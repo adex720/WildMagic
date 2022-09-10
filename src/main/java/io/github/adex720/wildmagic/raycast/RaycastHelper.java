@@ -2,8 +2,6 @@ package io.github.adex720.wildmagic.raycast;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.decoration.ItemFrameEntity;
 import net.minecraft.entity.projectile.ProjectileUtil;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.hit.EntityHitResult;
@@ -16,6 +14,15 @@ import net.minecraft.world.RaycastContext;
 
 import javax.annotation.Nullable;
 
+/**
+ * Helps to locate the target a player is looking at. The target can be an entity, a block or none.
+ * If the target is too far away, none is selected.
+ * <p>
+ * Huge thanks for the Fabric Wiki tutorial on pixel raycasting.
+ *
+ * @author adex720
+ * @see <a href="https://fabricmc.net/wiki/tutorial:pixel_raycast"></a>
+ */
 public class RaycastHelper {
 
     private BlockPos lastBlockPos;

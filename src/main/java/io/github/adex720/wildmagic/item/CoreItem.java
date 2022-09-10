@@ -5,6 +5,11 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.util.Rarity;
 
+/**
+ * An item collected from a {@link io.github.adex720.wildmagic.block.CoreCollector}.
+ *
+ * @author adex720
+ */
 public class CoreItem extends Item {
 
     public CoreItem(Rarity rarity) {

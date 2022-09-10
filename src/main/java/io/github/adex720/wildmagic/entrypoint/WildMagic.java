@@ -5,6 +5,11 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * Initializes everything needed for both client and server.
+ *
+ * @author adex720
+ */
 public class WildMagic implements ModInitializer {
 
     public static final Logger LOGGER = LoggerFactory.getLogger(WildMagic.class);

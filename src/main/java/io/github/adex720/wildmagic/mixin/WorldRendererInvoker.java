@@ -6,6 +6,9 @@ import net.minecraft.particle.ParticleEffect;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Invoker;
 
+/**
+ * Allows access to {@link WorldRenderer}#spawnParticle(ParticleEffect, boolean, double, double, double, double, double, double).
+ */
 @Mixin(WorldRenderer.class)
 public interface WorldRendererInvoker {
     @Invoker("spawnParticle")

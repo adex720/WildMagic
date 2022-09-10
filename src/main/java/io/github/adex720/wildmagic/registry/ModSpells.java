@@ -5,6 +5,9 @@ import io.github.adex720.wildmagic.spell.SelfTargetStatusEffectSpell;
 import io.github.adex720.wildmagic.spell.Spell;
 import net.minecraft.entity.effect.StatusEffects;
 
+/**
+ * @author adex720
+ */
 public class ModSpells {
 
     public static final Spell SPEED = new SelfTargetStatusEffectSpell(StatusEffects.SPEED, 100, 1, "spell_speed", 0, 0, 0);

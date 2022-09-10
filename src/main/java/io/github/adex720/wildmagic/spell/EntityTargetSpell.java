@@ -17,6 +17,11 @@ import net.minecraft.util.math.random.Random;
 
 import javax.annotation.Nullable;
 
+/**
+ * A spell which can be used on entities.
+ *
+ * @author adex720
+ */
 public abstract class EntityTargetSpell extends Spell {
 
     public final double range;

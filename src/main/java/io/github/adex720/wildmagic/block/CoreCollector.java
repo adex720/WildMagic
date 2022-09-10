@@ -22,6 +22,12 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 
+/**
+ * A core collector block slowly collects cores used when crafting wands.
+ * The collecting process is only active when the correct block is placed on top of the block.
+ *
+ * @author adex720
+ */
 public class CoreCollector extends Block {
 
     public static final BooleanProperty FERTILE = BooleanProperty.of("fertile");
@@ -54,6 +60,9 @@ public class CoreCollector extends Block {
         builder.add(FERTILE).add(ACTIVE);
     }
 
+    /**
+     * Checks if the collector is active.
+     */
     private void updateActive(World world, BlockPos blockPos, BlockState state) {
         world.setBlockState(blockPos, state.with(ACTIVE, world.getBlockState(blockPos.up()).getBlock() == blockOnTop));
     }
@@ -74,6 +83,16 @@ public class CoreCollector extends Block {
         if (random.nextInt(fertilizationDifficulty) == 0) makeFertile(world, pos);
     }
 
+
+    /**
+     * Harvest a core from the block and gives it to the harvester.
+     *
+     * @param world       World
+     * @param player      Harvester
+     * @param pos         Position of the collector
+     * @param state       Current state of the collector
+     * @param harvestTool Item used on harvest
+     */
     private void harvest(World world, PlayerEntity player, BlockPos pos, BlockState state, ItemStack harvestTool) {
         ItemEntity itemEntity = player.dropItem(new ItemStack(harvestItem, 1), false);
         itemEntity.resetPickupDelay();

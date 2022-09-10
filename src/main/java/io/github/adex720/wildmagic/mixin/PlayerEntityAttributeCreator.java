@@ -8,6 +8,12 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
+/**
+ * Registers player attributes from the mod.
+ * The registration is implemented in a way which leaves all previously registered attributes, even ones from other mods.
+ *
+ * @author adex720
+ */
 @Mixin(PlayerEntity.class)
 public class PlayerEntityAttributeCreator {
 

@@ -7,7 +7,9 @@ import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.util.registry.Registry;
 
-
+/**
+ * @author adex720
+ */
 public class ModEnchantments {
 
     public static final Enchantment ENDURANCE = new EnduranceEnchantment(Enchantment.Rarity.VERY_RARE, new EquipmentSlot[]{EquipmentSlot.MAINHAND});

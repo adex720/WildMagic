@@ -4,6 +4,11 @@ import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
+/**
+ * Material for {@link HarvestTool}
+ *
+ * @author adex720
+ */
 public enum HarvestToolMaterial implements ToolMaterial {
 
     EMERALD(0, 6f, 2f, 18, Ingredient.ofItems(Items.EMERALD)),

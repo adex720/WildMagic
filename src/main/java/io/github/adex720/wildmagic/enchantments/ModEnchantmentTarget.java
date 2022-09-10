@@ -4,6 +4,11 @@ import io.github.adex720.wildmagic.harvest.HarvestTool;
 import io.github.adex720.wildmagic.wand.Wand;
 import net.minecraft.item.Item;
 
+/**
+ * Enchantment type determines which tools can have the enchantment.
+ *
+ * @author adex720
+ */
 public enum ModEnchantmentTarget {
 
     WAND(){

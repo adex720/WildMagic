@@ -6,6 +6,11 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 
+/**
+ * A spell which gives the user a status effect.
+ *
+ * @author adex720
+ */
 public class SelfTargetStatusEffectSpell extends SelfTargetSpell {
 
     public final StatusEffect statusEffect;
@@ -27,7 +32,7 @@ public class SelfTargetStatusEffectSpell extends SelfTargetSpell {
     @Override
     public boolean cast(PlayerEntity caster, ClientWorld world, ItemStack wand) {
         caster.addStatusEffect(new StatusEffectInstance(statusEffect, duration, amplifier));
-        createParticlesOnUser(caster, world);
+        createParticlesOnPlayer(caster, world);
         return true;
     }
 }

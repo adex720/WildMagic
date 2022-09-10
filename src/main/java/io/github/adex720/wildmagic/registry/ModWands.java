@@ -5,6 +5,9 @@ import io.github.adex720.wildmagic.wand.Wand;
 import io.github.adex720.wildmagic.wand.WandToolMaterial;
 import net.minecraft.util.registry.Registry;
 
+/**
+ * @author adex720
+ */
 public class ModWands {
 
     public static final Wand ACACIA_WAND = new Wand(WandToolMaterial.ACACIA);

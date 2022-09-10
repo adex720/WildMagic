@@ -6,6 +6,9 @@ import net.minecraft.item.Item;
 import net.minecraft.tag.TagKey;
 import net.minecraft.util.registry.Registry;
 
+/**
+ * @author adex720
+ */
 public class ModTags {
 
     public static final TagKey<Item> WANDS = TagKey.of(Registry.ITEM_KEY, Util.identifier("wands"));

@@ -8,6 +8,9 @@ import net.minecraft.item.ToolMaterials;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
+/**
+ * @author adex720
+ */
 public class ModHarvestTools {
 
     public static final HarvestTool WOODEN_SCYTHE = new HarvestTool(ToolMaterials.WOOD, new FabricItemSettings().group(ModItemGroups.TOOLS).rarity(Rarity.COMMON));

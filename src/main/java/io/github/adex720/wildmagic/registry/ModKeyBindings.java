@@ -5,6 +5,9 @@ import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
 import org.lwjgl.glfw.GLFW;
 
+/**
+ * @author adex720
+ */
 public class ModKeyBindings {
 
     public static final KeyBinding WAND_SPELL1 = new KeyBinding("key.wmag.spell1", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_Y, "category.wmag.spell");

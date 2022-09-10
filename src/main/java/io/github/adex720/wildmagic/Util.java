@@ -4,7 +4,9 @@ import io.github.adex720.wildmagic.entrypoint.WildMagic;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.random.Random;
 
-
+/**
+ * @author adex720
+ */
 public class Util {
 
     public static final float ONE_PER_256 = 1.0f / 256;
