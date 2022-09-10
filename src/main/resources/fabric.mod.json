@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "wmag",
+  "version": "${version}",
+
+  "name": "Wild Magic",
+  "description": "Wild Magic adds spells, magic levels, intelligence and more!",
+  "authors": [
+    "adex720"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/adex720/WildMagic"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/wmag/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.adex720.wildmagic.entrypoint.WildMagic"
+    ],
+    "client": [
+      "io.github.adex720.wildmagic.entrypoint.ClientInitializer"
+    ]
+  },
+  "mixins": [
+    "wmag.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "fabric-key-binding-api-v1": "*",
+
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "item.wmag.wooden_core": "Wooden Core",
+  "item.wmag.stone_core": "Stone Core",
+  "item.wmag.iron_core": "Iron Core",
+  "item.wmag.diamond_core": "Diamond Core",
+  "item.wmag.golden_core": "Golden Core",
+  "item.wmag.netherite_core": "Netherite Core",
+  "item.wmag.emerald_core": "Emerald Core",
+
+  "item.wmag.dragon_heart": "Dragon Heart",
+  "item.wmag.bush_thorn": "Bush Thorn",
+
+
+  "item.wmag.wooden_scythe": "Wooden Scythe",
+  "item.wmag.stone_scythe": "Stone Scythe",
+  "item.wmag.iron_scythe": "Iron Scythe",
+  "item.wmag.diamond_scythe": "Diamond Scythe",
+  "item.wmag.golden_scythe": "Golden Scythe",
+  "item.wmag.netherite_scythe": "Netherite Scythe",
+  "item.wmag.emerald_scythe": "Emerald Scythe",
+
+  "item.wmag.dragon_heart_scythe": "Dragon Heart Scythe",
+
+
+  "item.wmag.acacia_wand": "Acacia Wand",
+  "item.wmag.birch_wand": "Birch Wand",
+  "item.wmag.crimson_wand": "Crimson Wand",
+  "item.wmag.dark_oak_wand": "Dark Oak Wand",
+  "item.wmag.jungle_wand": "Jungle Wand",
+  "item.wmag.mangrove_wand": "Mangrove Wand",
+  "item.wmag.oak_wand": "Oak Wand",
+  "item.wmag.spruce_wand": "Spruce Wand",
+  "item.wmag.warped_wand": "Warped Wand",
+
+
+  "block.wmag.packed_wood": "Packed Wood",
+
+
+  "block.wmag.wooden_core_collector": "Wooden Core Collector",
+  "block.wmag.stone_core_collector": "Stone Core Collector",
+  "block.wmag.iron_core_collector": "Iron Core Collector",
+  "block.wmag.diamond_core_collector": "Diamond Core Collector",
+  "block.wmag.golden_core_collector": "Golden Core Collector",
+  "block.wmag.netherite_core_collector": "Netherite Core Collector",
+  "block.wmag.emerald_core_collector": "Emerald Core Collector",
+
+  "block.wmag.bush_thorn_collector": "Bush Thorn Collector",
+  "block.wmag.dragon_heart_collector": "Dragon Heart Collector",
+
+
+  "spell.wmag.speed": "Speed",
+  "spell.wmag.glowing": "Glowing",
+  "spell.wmag.slowness": "Slowness",
+  "spell.wmag.mining_fatigue": "Mining Fatigue",
+  "spell.wmag.weakness": "Weakness",
+
+
+  "tooltip.wmag.wand.core": "Core: %s",
+  "tooltip.wmag.wand.spell": "Slot %f: %s",
+
+  "wand.wmag.cooldown": "Spells on cooldown for %s seconds",
+  "wand.wmag.missing_magic": "Not enough magic"
+}

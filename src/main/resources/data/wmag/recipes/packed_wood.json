@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "tag": "minecraft:overworld_natural_logs"
+    }
+  },
+  "result": {
+    "item": "wmag:packed_wood"
+  }
+}

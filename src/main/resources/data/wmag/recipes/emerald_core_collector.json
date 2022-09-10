@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mmm",
+    "mcm",
+    "mmm"
+  ],
+  "key": {
+    "m": {
+      "item": "minecraft:emerald_block"
+    },
+    "c": {
+      "item": "wmag:collector_core"
+    }
+  },
+  "result": {
+    "item": "wmag:emerald_core_collector"
+  }
+}

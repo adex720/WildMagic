@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "wmag:acacia_wand",
+    "wmag:birch_wand",
+    "wmag:crimson_wand",
+    "wmag:dark_oak_wand",
+    "wmag:jungle_wand",
+    "wmag:mangrove_wand",
+    "wmag:oak_wand",
+    "wmag:spruce_wand",
+    "wmag:warped_wand"
+  ]
+}

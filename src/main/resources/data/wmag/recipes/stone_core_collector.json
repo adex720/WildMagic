@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mmm",
+    "mcm",
+    "mmm"
+  ],
+  "key": {
+    "m": {
+      "item": "minecraft:stone"
+    },
+    "c": {
+      "item": "wmag:collector_core"
+    }
+  },
+  "result": {
+    "item": "wmag:stone_core_collector"
+  }
+}

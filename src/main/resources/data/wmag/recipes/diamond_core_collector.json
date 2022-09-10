@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mmm",
+    "mcm",
+    "mmm"
+  ],
+  "key": {
+    "m": {
+      "item": "minecraft:diamond_block"
+    },
+    "c": {
+      "item": "wmag:collector_core"
+    }
+  },
+  "result": {
+    "item": "wmag:diamond_core_collector"
+  }
+}

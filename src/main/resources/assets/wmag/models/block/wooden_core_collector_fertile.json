@@ -1,0 +1,7 @@
+{
+  "parent": "wmag:block/top",
+  "textures": {
+    "other": "wmag:block/wooden_core_collector_fertile",
+    "top": "wmag:block/wooden_core_collector_fertile"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "wmag:block/top",
+  "textures": {
+    "other": "wmag:block/bush_thorn_collector_fertile",
+    "top": "wmag:block/bush_thorn_collector_fertile"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mmm",
+    "mcm",
+    "mmm"
+  ],
+  "key": {
+    "m": {
+      "item": "minecraft:obsidian"
+    },
+    "c": {
+      "item": "wmag:collector_core"
+    }
+  },
+  "result": {
+    "item": "wmag:dragon_heart_collector"
+  }
+}

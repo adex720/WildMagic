@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "wmag:wooden_scythe",
+    "wmag:stone_scythe",
+    "wmag:iron_scythe",
+    "wmag:diamond_scythe",
+    "wmag:golden_scythe",
+    "wmag:netherite_scythe",
+    "wmag:emerald_scythe",
+    "wmag:dragon_heart_scythe"
+  ]
+}

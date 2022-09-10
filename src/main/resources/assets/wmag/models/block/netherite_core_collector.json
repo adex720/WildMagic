@@ -1,0 +1,7 @@
+{
+  "parent": "wmag:block/top",
+  "textures": {
+    "other": "wmag:block/netherite_core_collector",
+    "top": "wmag:block/netherite_core_collector_top"
+  }
+}

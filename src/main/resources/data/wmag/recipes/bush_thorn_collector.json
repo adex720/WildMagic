@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "sss",
+    "mcm",
+    "mmm"
+  ],
+  "key": {
+    "m": {
+      "item": "minecraft:sandstone"
+    },
+    "c": {
+      "item": "wmag:collector_core"
+    },
+    "s": {
+      "item": "minecraft:sand"
+    }
+  },
+  "result": {
+    "item": "wmag:iron_core_collector"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mmm",
+    "mcm",
+    "mmm"
+  ],
+  "key": {
+    "m": {
+      "tag": "minecraft:logs"
+    },
+    "c": {
+      "item": "wmag:collector_core"
+    }
+  },
+  "result": {
+    "item": "wmag:wooden_core_collector"
+  }
+}

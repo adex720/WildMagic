@@ -1,0 +1,7 @@
+{
+  "parent": "wmag:block/top",
+  "textures": {
+    "other": "wmag:block/dragon_heart_collector",
+    "top": "wmag:block/dragon_heart_collector_top"
+  }
+}

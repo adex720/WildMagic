@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "active=false,fertile=false": {
+      "model": "wmag:block/wooden_core_collector"
+    },
+    "active=true,fertile=false": {
+      "model": "wmag:block/wooden_core_collector_active"
+    },
+    "active=false,fertile=true": {
+      "model": "wmag:block/wooden_core_collector_fertile"
+    },
+    "active=true,fertile=true": {
+      "model": "wmag:block/wooden_core_collector_active_fertile"
+    }
+  }
+}

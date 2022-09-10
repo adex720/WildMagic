@@ -1,0 +1,20 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "particle": "#other"
+  },
+  "elements": [
+    {
+      "from": [ 0, 0, 0 ],
+      "to":   [ 16, 16, 16 ],
+      "faces": {
+        "up":    { "texture": "#top",     "cullface": "up" },
+        "down":  { "texture": "#other",   "cullface": "down" },
+        "north": { "texture": "#other",   "cullface": "north" },
+        "south": { "texture": "#other",   "cullface": "south" },
+        "west":  { "texture": "#other",   "cullface": "west" },
+        "east":  { "texture": "#other",   "cullface": "east" }
+      }
+    }
+  ]
+}
