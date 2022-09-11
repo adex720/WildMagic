@@ -2,6 +2,7 @@ package io.github.adex720.wildmagic.spell;
 
 import io.github.adex720.wildmagic.mixin.ClientWorldRendererAccessor;
 import io.github.adex720.wildmagic.mixin.WorldRendererInvoker;
+import io.github.adex720.wildmagic.raycast.RaycastResult;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.entity.Entity;
@@ -37,19 +38,13 @@ public class EntityTargetStatusEffectSpell extends EntityTargetSpell {
 
 
     @Override
-    public boolean onEntityHit(Entity target, PlayerEntity caster, ClientWorld world) {
+    public boolean onEntityHit(ClientWorld world, PlayerEntity caster, RaycastResult result) {
+        Entity target = result.getEntity();
         if (!target.isLiving()) return false;
         ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(statusEffect, duration, amplifier));
 
         WorldRendererInvoker worldRenderer = (WorldRendererInvoker) ((ClientWorldRendererAccessor) world).getWorldRenderer();
         createParticlePath(worldRenderer, world.getRandom(), caster, target, 4f);
         return true;
-    }
-
-    @Override
-    public boolean cast(PlayerEntity caster, ClientWorld world, ItemStack wand) {
-        Entity target = getTargetEntity(MinecraftClient.getInstance(), wand);
-        if (target == null) return false;
-        return onEntityHit(target, caster, world);
     }
 }

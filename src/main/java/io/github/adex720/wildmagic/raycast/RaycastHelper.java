@@ -12,8 +12,6 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.Vec3f;
 import net.minecraft.world.RaycastContext;
 
-import javax.annotation.Nullable;
-
 /**
  * Helps to locate the target a player is looking at. The target can be an entity, a block or none.
  * If the target is too far away, none is selected.
@@ -33,7 +31,7 @@ public class RaycastHelper {
         lastEntity = null;
     }
 
-    public HitResult.Type raycast(MinecraftClient client, int tickDelta, double reachDistance) {
+    public RaycastResult raycast(MinecraftClient client, int tickDelta, double reachDistance) {
         int width = client.getWindow().getScaledWidth();
         int height = client.getWindow().getScaledHeight();
         Vec3d cameraDirection = client.cameraEntity.getRotationVec(tickDelta);
@@ -43,7 +41,7 @@ public class RaycastHelper {
         verticalRotationAxis.cross(Vec3f.POSITIVE_Y);
         if (!verticalRotationAxis.normalize()) {
             // TODO: check for blocks
-            return HitResult.Type.MISS;
+            return RaycastResult.miss();
         }
 
         Vec3f horizontalRotationAxis = new Vec3f(cameraDirection);
@@ -55,20 +53,19 @@ public class RaycastHelper {
 
         Vec3d direction = map((float) angleSize, cameraDirection, horizontalRotationAxis, verticalRotationAxis, (int) (width * 0.5f), (int) (height * 0.5f), width, height);
         HitResult hit = raycastInDirection(client, tickDelta, direction, reachDistance);
+        if (hit == null) return RaycastResult.miss();
 
         switch (hit.getType()) {
             case BLOCK -> {
                 BlockHitResult blockHit = (BlockHitResult) hit;
-                lastBlockPos = blockHit.getBlockPos();
-                lastEntity = null;
+                return RaycastResult.block(blockHit.getBlockPos(), hit.getPos());
             }
             case ENTITY -> {
                 EntityHitResult entityHit = (EntityHitResult) hit;
-                lastEntity = entityHit.getEntity();
-                lastBlockPos = null;
+                return RaycastResult.entity(entityHit.getEntity(), hit.getPos());
             }
         }
-        return hit.getType();
+        return RaycastResult.miss();
     }
 
     private static Vec3d map(float anglePerPixel, Vec3d center, Vec3f horizontalRotationAxis,
@@ -113,13 +110,4 @@ public class RaycastHelper {
                 includeFluids ? RaycastContext.FluidHandling.ANY : RaycastContext.FluidHandling.NONE, entity));
     }
 
-    @Nullable
-    public BlockPos getLastBlockPos() {
-        return lastBlockPos;
-    }
-
-    @Nullable
-    public Entity getLastEntity() {
-        return lastEntity;
-    }
 }

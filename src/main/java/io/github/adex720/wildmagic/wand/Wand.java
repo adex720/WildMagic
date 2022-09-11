@@ -52,6 +52,10 @@ public class Wand extends ToolItem {
         this.core = WandCore.NONE;
     }
 
+    public WandCore getCore() {
+        return core;
+    }
+
     public void setCore(WandCore core) {
         this.core = core;
     }

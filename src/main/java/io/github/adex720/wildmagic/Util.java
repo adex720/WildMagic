@@ -10,6 +10,7 @@ import net.minecraft.util.math.random.Random;
 public class Util {
 
     public static final float ONE_PER_256 = 1.0f / 256;
+    public static final double PI_PER_TWO = Math.PI * 0.5d;
 
     public static Identifier identifier(String path) {
         return Identifier.of(WildMagic.MODID, path);

@@ -4,6 +4,7 @@ import io.github.adex720.wildmagic.spell.EntityTargetStatusEffectSpell;
 import io.github.adex720.wildmagic.spell.SelfTargetStatusEffectSpell;
 import io.github.adex720.wildmagic.spell.Spell;
 import io.github.adex720.wildmagic.spell.block.BlockOnFireSpell;
+import io.github.adex720.wildmagic.spell.object.DragonBreathSpell;
 import net.minecraft.entity.effect.StatusEffects;
 
 /**
@@ -20,6 +21,8 @@ public class ModSpells {
 
     public static final Spell SPARK = new BlockOnFireSpell("spark", 0xd1ad0d, 25, 0, 5, 0, 20);
 
+    public static final Spell DRAGON_BREATH = new DragonBreathSpell("dragon_breath", 0x6a0b8f, 15, 0,50, 1, 30); //TODO: remove debug values
+
     private static final Spell[] SPELLS = new Spell[Spell.getSpellCount()];
 
     public static void registerWands() {
@@ -31,6 +34,8 @@ public class ModSpells {
         register(WEAKNESS);
 
         register(SPARK);
+
+        register(DRAGON_BREATH);
     }
 
     private static void register(Spell spell) {
