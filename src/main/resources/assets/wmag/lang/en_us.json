@@ -57,6 +57,8 @@
 
   "spell.wmag.spark": "Spark",
 
+  "spell.wmag.dragon_breath": "Dragon's Breath",
+
 
   "tooltip.wmag.wand.core": "Core: %s",
   "tooltip.wmag.wand.spell": "Slot %f: %s",
