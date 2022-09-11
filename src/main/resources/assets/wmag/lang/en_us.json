@@ -49,10 +49,13 @@
 
 
   "spell.wmag.speed": "Speed",
+
   "spell.wmag.glowing": "Glowing",
   "spell.wmag.slowness": "Slowness",
   "spell.wmag.mining_fatigue": "Mining Fatigue",
   "spell.wmag.weakness": "Weakness",
+
+  "spell.wmag.spark": "Spark",
 
 
   "tooltip.wmag.wand.core": "Core: %s",

@@ -31,7 +31,7 @@ public abstract class EntityTargetSpell extends Spell {
         this.range = range;
     }
 
-    public abstract void onEntityHit(Entity target, PlayerEntity caster, ClientWorld world);
+    public abstract boolean onEntityHit(Entity target, PlayerEntity caster, ClientWorld world);
 
     @Nullable
     public Entity getTargetEntity(MinecraftClient client, ItemStack wand) {

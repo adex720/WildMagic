@@ -3,6 +3,7 @@ package io.github.adex720.wildmagic.registry;
 import io.github.adex720.wildmagic.spell.EntityTargetStatusEffectSpell;
 import io.github.adex720.wildmagic.spell.SelfTargetStatusEffectSpell;
 import io.github.adex720.wildmagic.spell.Spell;
+import io.github.adex720.wildmagic.spell.block.BlockOnFireSpell;
 import net.minecraft.entity.effect.StatusEffects;
 
 /**
@@ -17,6 +18,8 @@ public class ModSpells {
     public static final Spell MINING_FATIGUE = new EntityTargetStatusEffectSpell(StatusEffects.MINING_FATIGUE, 75, 1, "spell_mining_fatigue", 5, 3, 12, 0);
     public static final Spell WEAKNESS = new EntityTargetStatusEffectSpell(StatusEffects.WEAKNESS, 75, 1, "spell_weakness", 5, 3, 12, 0);
 
+    public static final Spell SPARK = new BlockOnFireSpell("spark", 0xd1ad0d, 25, 0, 5, 0, 20);
+
     private static final Spell[] SPELLS = new Spell[Spell.getSpellCount()];
 
     public static void registerWands() {
@@ -26,6 +29,8 @@ public class ModSpells {
         register(SLOWNESS);
         register(MINING_FATIGUE);
         register(WEAKNESS);
+
+        register(SPARK);
     }
 
     private static void register(Spell spell) {

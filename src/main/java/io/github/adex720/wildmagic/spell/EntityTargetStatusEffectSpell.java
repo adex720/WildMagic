@@ -37,19 +37,19 @@ public class EntityTargetStatusEffectSpell extends EntityTargetSpell {
 
 
     @Override
-    public void onEntityHit(Entity target, PlayerEntity caster, ClientWorld world) {
-        if (!target.isLiving()) return;
+    public boolean onEntityHit(Entity target, PlayerEntity caster, ClientWorld world) {
+        if (!target.isLiving()) return false;
         ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(statusEffect, duration, amplifier));
 
         WorldRendererInvoker worldRenderer = (WorldRendererInvoker) ((ClientWorldRendererAccessor) world).getWorldRenderer();
         createParticlePath(worldRenderer, world.getRandom(), caster, target, 4f);
+        return true;
     }
 
     @Override
     public boolean cast(PlayerEntity caster, ClientWorld world, ItemStack wand) {
         Entity target = getTargetEntity(MinecraftClient.getInstance(), wand);
         if (target == null) return false;
-        onEntityHit(target, caster, world);
-        return true;
+        return onEntityHit(target, caster, world);
     }
 }

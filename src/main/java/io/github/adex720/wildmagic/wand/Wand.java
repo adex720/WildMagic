@@ -60,7 +60,7 @@ public class Wand extends ToolItem {
         BlockState target = context.getWorld().getBlockState(context.getBlockPos());
         if (target.isIn(ModTags.SPELL_TABLES)) {
             ItemStack wand = context.getStack();
-            setSpell(wand, 1, ModSpells.GLOWING);
+            setSpell(wand, 1, ModSpells.SPARK);
             return ActionResult.SUCCESS;
         }
 
