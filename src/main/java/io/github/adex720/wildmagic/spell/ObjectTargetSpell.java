@@ -90,9 +90,10 @@ public abstract class ObjectTargetSpell extends Spell {
         }
         onTargetHit(world, caster, result);
 
-        if (result.getType() == HitResult.Type.BLOCK) onBlockHit(world, caster, result);
-        else onEntityHit(world, caster, result);
-        return true;
+        if (result.getType() == HitResult.Type.BLOCK) {
+            return onBlockHit(world, caster, result);
+        }
+        return onEntityHit(world, caster, result);
     }
 
     public void createParticlePath(WorldRendererInvoker world, Random random, LivingEntity caster, Entity target, float density) {
